@@ -52,7 +52,7 @@ body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   text-transform: uppercase;
-  margin-left: 287px;
+  margin-left: auto;
 }
 
 .menu {
@@ -141,7 +141,7 @@ body {
 
 .container-arrow {
   position: relative;
-  padding: 0;
+  margin-left: 10px;
   max-width: 1200px;
 }
 
@@ -444,4 +444,140 @@ body {
 .footer__nav-list {
   display: flex;
   gap: 0 20px;
+}
+
+@media (max-width: 1030px) {
+  .about__textbox {
+    flex-direction: column;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .about__text {
+    flex-basis: 100px;
+  }
+  .about__text p:last-child {
+    margin-bottom: 15px;
+  }
+  .about__inner {
+    padding-left: 0;
+  }
+  .about__arrow {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .accordeon__trigger-text {
+    padding: 0 20px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__title {
+    display: none;
+  }
+  .menu {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .accordeon__container {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .top-slide__inner {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .top-slide__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .top-slide__btn {
+    margin: 50px auto 0;
+  }
+  .top-slide__content {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .accordeon__trigger {
+    display: flex;
+    flex-direction: column;
+  }
+  .accordeon__trigger-title {
+    flex-basis: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .accordeon__trigger-text {
+    margin-right: 0;
+    flex-basis: 30px;
+  }
+  .accordeon__item:last-child::after {
+    bottom: -120px;
+  }
+  .accordeon__item {
+    padding: 0 50px 0 0;
+  }
+  .accordeon__item::before {
+    right: 16px;
+    top: 40px;
+  }
+}
+
+@media (max-width: 475px) {
+  .header {
+    margin-bottom: 30px;
+  }
+  .top-slide__inner {
+    min-height: 600px;
+  }
+  .top-slide__title {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  .top-slide__content {
+    text-align: center;
+  }
+  .top-slide__btn {
+    margin: 30px auto;
+  }
+  .container-arrow {
+    margin-top: 10px;
+  }
+  .about__item img {
+    width: 250px;
+  }
+  .about__item {
+    width: 250px;
+  }
+
+  .swiper-slide {
+    width: 250px !important;
+  }
+  .about {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header__inner {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .logo,
+  .user-nav {
+    order: -1;
+  }
+  .menu {
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
 }
