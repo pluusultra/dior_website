@@ -446,6 +446,22 @@ body {
   gap: 0 20px;
 }
 
+@media (max-width: 1640px) {
+  .products__items {
+    position: static;
+  }
+  .poducts__title {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .products__item-img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1030px) {
   .about__textbox {
     flex-direction: column;
@@ -506,6 +522,14 @@ body {
   }
   .top-slide__content {
     margin-top: 0;
+  }
+
+  .products__items {
+    flex-wrap: wrap;
+    gap: 0 40px;
+  }
+  .products__item {
+    width: 45%;
   }
 }
 
